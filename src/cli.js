@@ -7,4 +7,11 @@ export const getName = () => {
   return name;
 };
 
-export const sayGreet = () => console.log(`Hello, ${getName()}!`);
+export const getAnswere = () => {
+  const answere = readlineSync.question('Your answere: ');
+  return answere;
+};
+
+export const getRandomNum = (max) => Math.floor(Math.random() * max);
+
+export const sayGreet = (name = getName()) => console.log(`Hello, ${name}!`);
