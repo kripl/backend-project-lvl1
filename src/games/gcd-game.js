@@ -42,6 +42,8 @@ const gcdGame = () => {
     const answer = getAnswere();
     const corrAns = getGcd(num1, num2);
     if (corrAns === Number(answer)) {
+      console.log('Correct!');
+    } else {
       return (console.log(`'${answer}' is wrong answer ;(. Correct answer was '${corrAns}'.\nLet's try again, ${name}!`));
     }
   }
