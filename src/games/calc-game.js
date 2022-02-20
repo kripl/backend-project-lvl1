@@ -25,7 +25,7 @@ const calcGame = () => {
         corrAns = num1 * num2;
         break;
     }
-    if (corrAns === answer) {
+    if (corrAns === Number(answer)) {
       console.log('Correct!');
     } else {
       return (console.log(`'${answer}' is wrong answer ;(. Correct answer was '${corrAns}'.\nLet's try again, ${name}!`));
