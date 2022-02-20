@@ -1,6 +1,6 @@
 import {
   getAnswere, getRandomNum, getName, sayGreet,
-} from './../cli.js';
+} from '../cli.js';
 
 const calcGame = () => {
   const name = getName();
@@ -8,7 +8,7 @@ const calcGame = () => {
   console.log('What is the result of the expression?');
   const operations = ['+', '-', '*'];
   for (let i = 1; i <= 3; i += 1) {
-    const corrAns = 0;
+    let corrAns = 0;
     const num1 = getRandomNum(101);
     const num2 = getRandomNum(101);
     const randOper = operations[getRandomNum(3)];
@@ -21,7 +21,7 @@ const calcGame = () => {
       case '-':
         corrAns = num1 - num2;
         break;
-      case '*':
+      default:
         corrAns = num1 * num2;
         break;
     }
@@ -30,6 +30,7 @@ const calcGame = () => {
     } else {
       return (console.log(`'${answer}' is wrong answer ;(. Correct answer was '${corrAns}'.\nLet's try again, ${name}!`));
     }
-  };
+  }
+  return (console.log(`Congratulations, ${name}!`));
 };
 export default calcGame;
