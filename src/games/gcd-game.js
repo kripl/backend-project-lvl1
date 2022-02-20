@@ -1,20 +1,19 @@
 import {
-  getRandomNum, getAnswere
+  getRandomNum, getAnswere, getName, sayGreet,
 } from '../cli.js';
 
-
 const getGreatNum = (num1, num2) => {
-    if (num1 > num2) {
-        return num1;
-    }
-    return num2;
+  if (num1 > num2) {
+    return num1;
+  }
+  return num2;
 };
 
 const getLowNum = (num1, num2) => {
-    if (num1 < num2) {
-        return num1;
-    }
-    return num2;
+  if (num1 < num2) {
+    return num1;
+  }
+  return num2;
 };
 
 const getGcd = (num1, num2) => {
@@ -48,3 +47,4 @@ const gcdGame = () => {
   }
   return (console.log(`Congratulations, ${name}!`));
 };
+export default gcdGame;
