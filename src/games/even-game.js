@@ -1,6 +1,6 @@
 import {
   getAnswere, getRandomNum, getName, sayGreet,
-} from './../cli.js';
+} from '../cli.js';
 
 const evenGame = () => {
   const name = getName();
