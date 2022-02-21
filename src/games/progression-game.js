@@ -30,6 +30,7 @@ const progrGame = () => {
     } else {
         return (console.log(`'${answer}' is wrong answer ;(. Correct answer was '${corrAns}'.\nLet's try again, ${name}!`));
     }
+  }
   return (console.log(`Congratulations, ${name}!`));
 };
 export default progrGame;
