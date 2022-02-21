@@ -14,4 +14,10 @@ export const getAnswere = () => {
 
 export const getRandomNum = (max) => Math.floor(Math.random() * max);
 
+export const getRandonNumRange = (start, finish) => {
+  const min = Math.ceil(start);
+  const max = Math.floor(finish);
+  return Math.floor(Math.random() * (max - min)) + min;
+};
+
 export const sayGreet = (name = getName()) => console.log(`Hello, ${name}!`);
