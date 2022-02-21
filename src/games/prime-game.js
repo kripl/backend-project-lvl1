@@ -5,7 +5,8 @@ import {
 const isPrime = (num) => {
   if (num === 1) {
     return 'no';
-  } 
+  }
+
   if (num === 2) {
     return 'yes';
   }
