@@ -28,7 +28,7 @@ const progrGame = () => {
     if (String(corrAns) === answer) {
       console.log('Correct!');
     } else {
-        return (console.log(`'${answer}' is wrong answer ;(. Correct answer was '${corrAns}'.\nLet's try again, ${name}!`));
+      return (console.log(`'${answer}' is wrong answer ;(. Correct answer was '${corrAns}'.\nLet's try again, ${name}!`));
     }
   }
   return (console.log(`Congratulations, ${name}!`));
